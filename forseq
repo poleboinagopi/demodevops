@@ -1,0 +1,11 @@
+for i in {1..50}
+do
+  if [ $i -eq 8 ]
+  then
+    echo "yes"
+    #echo "current value is: $i"
+    #break
+   continue
+  fi
+  echo "current value is: $i"
+done

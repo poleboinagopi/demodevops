@@ -1,0 +1,8 @@
+case `whoami` in
+    'root')
+        echo "script executed by `whoami` user";;
+    'testuser')
+        echo "script executed by `whoami` user";;
+      *)
+        echo "user doesnot match with root or testuser ";;
+esac

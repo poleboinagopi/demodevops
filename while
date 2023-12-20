@@ -1,0 +1,6 @@
+i=0
+while [ $i -le 20 ]
+do
+  echo "current value is: $i "
+  i=$(( $i + 1 ))
+done

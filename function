@@ -1,0 +1,18 @@
+SERVER=${1:-admin}
+function print (
+  echo "User match with root"
+  echo "User match with testuser"
+)
+echo -e "\n"
+read -sp "new user $SERVER created: " password
+if [ $SERVER == root ]
+then
+  print
+  #echo "User match with root"
+elif [ $SERVER == testuser ]
+then
+  print
+  #echo "User match with testuser"
+else 
+  echo "provided both users root or testuser"
+fi
